@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient( 135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #eeeeee;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Game Card */
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Input */
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Buttons */
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    background: #667eea;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #764ba2;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#restartBtn {
+    background: #2ecc71;
+}
+
+#restartBtn:hover {
+    background: #27ae60;
+}
+
+
+/* Message */
+
+#message {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#attempts {
+    margin-top: 10px;
+    color: #ddd;
+}
+
+
+/* History */
+
+#history {
+    margin-top: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#history p {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+/* Back Button */
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 35px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: white;
+    color: #667eea;
+    transform: translateY(-3px);
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Mobile */
+
+@media(max-width:500px) {
+    body {
+        padding: 15px;
+    }
+    .card {
+        padding: 25px 15px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
+}

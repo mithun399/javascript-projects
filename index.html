@@ -7,188 +7,98 @@
     <title>Mithun JavaScript Projects</title>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-
+        
         body {
-
             min-height: 100vh;
-
             font-family: Arial, Helvetica, sans-serif;
-
-            background: linear-gradient(
-                135deg,
-                #667eea,
-                #764ba2
-            );
-
+            background: linear-gradient( 135deg, #667eea, #764ba2);
             display: flex;
             justify-content: center;
             align-items: center;
-
             padding: 20px;
-
         }
-
-
+        
         .container {
-
             width: 100%;
             max-width: 900px;
-
-            background: rgba(255,255,255,0.15);
-
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
-
             border-radius: 20px;
-
             padding: 40px;
-
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
             text-align: center;
-
         }
-
-
+        
         h1 {
-
             color: white;
-
-            font-size: clamp(2rem,5vw,3rem);
-
+            font-size: clamp(2rem, 5vw, 3rem);
             margin-bottom: 10px;
-
         }
-
-
+        
         .subtitle {
-
             color: #eee;
-
             margin-bottom: 35px;
-
             font-size: 1.1rem;
-
         }
-
-
-
+        
         .projects {
-
             display: grid;
-
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(220px,1fr)
-            );
-
+            grid-template-columns: repeat( auto-fit, minmax(220px, 1fr));
             gap: 20px;
-
         }
-
-
-
+        
         .card {
-
             background: white;
-
             padding: 25px;
-
             border-radius: 15px;
-
             transition: 0.3s;
-
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
-
-
-
+        
         .card:hover {
-
             transform: translateY(-8px);
-
         }
-
-
-
+        
         .card h2 {
-
             color: #333;
-
             margin-bottom: 15px;
-
         }
-
-
-
+        
         .card p {
-
             color: #666;
-
             margin-bottom: 20px;
-
         }
-
-
-
+        
         .btn {
-
             display: inline-block;
-
             text-decoration: none;
-
             background: #667eea;
-
             color: white;
-
             padding: 12px 25px;
-
             border-radius: 30px;
-
             transition: 0.3s;
-
         }
-
-
-
+        
         .btn:hover {
-
             background: #764ba2;
-
         }
-
-
-
+        
         footer {
-
             margin-top: 30px;
-
             color: #ddd;
-
             font-size: 14px;
-
         }
-
-
-
-        @media(max-width:500px){
-
-            .container{
-
-                padding:25px;
-
+        
+        @media(max-width:500px) {
+            .container {
+                padding: 25px;
             }
-
         }
-
-
     </style>
 
 </head>
@@ -197,66 +107,62 @@
 <body>
 
 
-<div class="container">
+    <div class="container">
 
 
-    <h1>
-        Mithun JavaScript Projects
-    </h1>
+        <h1>
+            Mithun JavaScript Projects
+        </h1>
 
 
-    <p class="subtitle">
-        A collection of my JavaScript learning projects
-    </p>
+        <p class="subtitle">
+            A collection of my JavaScript learning projects
+        </p>
 
 
 
-    <div class="projects">
+        <div class="projects">
 
 
-        <div class="card">
+            <div class="card">
 
-            <h2>
-                Counter App
-            </h2>
+                <h2>
+                    Counter App
+                </h2>
 
-            <p>
-                A simple JavaScript counter application
-                with increase, decrease and reset features.
-            </p>
+                <p>
+                    A simple JavaScript counter application with increase, decrease and reset features.
+                </p>
 
 
-            <a class="btn" href="./counter/index.html">
+                <a class="btn" href="./counter/index.html">
                 View Project
             </a>
+
+            </div>
+
+
+
+
+            <div class="card">
+                <h2>Guessing Number Game</h2>
+                <p>Task management application.</p>
+                <a class="btn" href="./number-guessing/index.html">
+                View Project
+            </a>
+            </div>
+
 
         </div>
 
 
 
-        <!-- Add future projects here -->
-
-        <!--
-        <div class="card">
-            <h2>Todo App</h2>
-            <p>Task management application.</p>
-            <a class="btn" href="./todo/index.html">
-                View Project
-            </a>
-        </div>
-        -->
+        <footer>
+            © 2026 Mithun | JavaScript Projects
+        </footer>
 
 
     </div>
-
-
-
-    <footer>
-        © 2026 Mithun | JavaScript Projects
-    </footer>
-
-
-</div>
 
 
 </body>
