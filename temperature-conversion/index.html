@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form>
+
+            <h1>🌡️ Temperature Converter</h1>
+
+            <p class="subtitle">
+                Convert temperatures between Celsius and Fahrenheit.
+            </p>
+
+            <input type="number" id="textbox" value="0" placeholder="Enter Temperature">
+
+            <div class="option">
+                <input type="radio" id="toFarenheit" name="unit">
+                <label for="toFarenheit">
+                    Celsius → Fahrenheit
+                </label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="toCelcius" name="unit">
+                <label for="toCelcius">
+                    Fahrenheit → Celsius
+                </label>
+            </div>
+
+            <button type="button" onclick="convert()">
+                Convert
+            </button>
+
+            <p id="result">
+                Select a conversion unit
+            </p>
+
+        </form>
+
+        <a href="../index.html" class="back-btn">
+            🏠 Back to Projects
+        </a>
+
+    </div>
+
+    <footer>
+        © 2026 Mithun | JavaScript Projects
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
